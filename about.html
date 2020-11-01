@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rólunk</title>
     <link rel="stylesheet" href="/assets/CSS/main.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <header id="top">
@@ -88,11 +87,10 @@
                     <label class="form" for="fname">Keresztnév:</label>
                     <input class="form" type="text" id="fname" name="fname">
                     <label class="form" for="email">E-mail cím:</label>
-                    <input class="form" type="email" id="email" name="email" value="név@kiszolgáló.domain">
+                    <input class="form" type="email" id="email" name="email">
                     <label class="form" for="message">Írja az üzenetét ide:</label>
-                    <textarea class="form" id="message" name="message" rows="4" cols="50">
-                    </textarea>
-                    <input type="submit" value="Elküld">
+                    <textarea class="form" id="message" name="message" rows="4" cols="50">üzenet</textarea>
+                    <input type="submit" value="Elküld" onclick="validateForm()">
                   </form>
             </div>
             <div class="col-s-2 col-3"></div>
@@ -104,5 +102,7 @@
             <a href="#top"><button>Vissza a lap tetejére</button></a>
         </div>
     </footer>
+
+    <script src="/assets/js/main.js"></script>
 </body>
 </html>
